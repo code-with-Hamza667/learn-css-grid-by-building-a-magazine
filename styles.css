@@ -28,6 +28,17 @@ a {
   color: linen;
 }
 main {
+  row-gap: 3rem;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(
+      2rem,
+      1fr
+    );
+}
+.heading {
+  grid-column: 2/3;
+}
+.text {
+    grid-column: 2/3;
     display: grid;
-    grid-template-columns: 1fr 94rem 1fr;
 }
